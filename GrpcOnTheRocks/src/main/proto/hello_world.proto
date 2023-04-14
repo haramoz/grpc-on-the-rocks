@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option java_multiple_files = true;
-option java_package = "com.dr.sattlers.bar";
-option java_outer_classname = "HelloWorldProto";
+package com.dr.sattlers.bar.grpc;
 
-package helloworld;
+option java_multiple_files = true;
+option java_package = "com.dr.sattlers.bar.grpc";
+
 
 service Greeter {
   rpc SayHello (HelloRequest) returns (HelloReply) {}
@@ -15,5 +15,5 @@ message HelloRequest {
 }
 
 message HelloReply {
-  string message = 1;
+  string reply = 1;
 }
